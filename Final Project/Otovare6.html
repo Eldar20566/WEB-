@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styleweb.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+         @media(max-width: 620px){
+            section.heding1{
+                padding-top:20px;
+            }
+
+            section.heding1 a.name{
+                font-size: 40px;
+            }
+
+            img.korzina{
+                width: 25px;
+            }
+
+            a.glav{
+                font-size: 18px;
+            }
+            section.heding1{
+                height: 120px;
+            }
+            section.heding1 a.name{
+                font-size: 30px;
+            }
+            div.background{
+                padding: 0;
+                width: 30%;
+            }
+            div.companyname{
+                width: 40%;
+            }
+            section.pustoi{
+                width: 10%;
+            }
+            section.heding2-1{
+                width: 80%;
+                justify-content: space-around;
+            }
+            nav.pustoi1{
+                display: none;
+            }
+            div.information{
+                width: 100%;
+                padding: 20px;
+            }
+            div.main{
+                flex-direction: column;
+            }
+            div.left{
+                width: 100%;
+                padding-right: 0;
+            }
+            div.right{
+                width: 100%;
+            }
+
+         }
+
+
+    </style>
+
+
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <section class="heding1" id="heading">
+            <div class="background">
+                <img src="moonblack.png" id="moon" onclick="blackotovare()" class="moon" alt="">
+                <a href="Otovare6.html"><img src="sunblack.png" id="sun" class="sun" alt=""></a>
+            </div>
+            <div class="companyname">
+            <a class="name" id="companyname" href="Final Project.html" target="_self">WEB PORTAL</a>
+            </div>
+            <div class="background">
+                <label for="RUS"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png"  class="flag" alt=""></label>
+                <a href="Otovare6.html"><p id="RUS" class="language" onclick="Ru()">RU</p></a>
+                <label for="EN"><img src="https://icons.iconarchive.com/icons/wikipedia/flags/512/US-United-States-Flag-icon.png" class="flag" alt=""></label>
+                <p class="language" id="ENG" onclick="EN()">EN</p>
+            </div>
+        </section>
+        <section class="heding2" id="heding2">
+            <section class="pustoi" id="pustoi"></section>
+            <section class="heding2-1" id="heding2-1">
+            <a class="glav" href="Final Project.html" id="glav1" >Главная</a>
+            <a class="glav" href="store.html" id="glav2">Магазин</a>
+            <a class="glav" href="" id="glav3">Лицензий</a>
+            </section>
+            <section class="pustoi" id="pustoi">
+            <a href="" target="_self"><img class="korzina" id="korzina" src="korzinablack.png" alt="korzina"></a>
+            </section>
+        </section>
+    </header>
+    <div class="otstup"></div>
+    
+    <div class="information">
+        <nav class="pustoi1"></nav>
+        <div class="inform">
+            <div class="foto">
+                <img class="d-block w-100" src="https://satelonline.kz/upload/medialibrary/a3d/a3df26fd329e40b47a643cde5e26c5bb.jpg" alt="Первый слайд" style="width: 100%; height:100%; ">
+            </div>
+            <div class="main">
+                <div class="left">
+                    <h3 id="vashtovar" style="font-size: 22px;">MacBook Pro</h3>
+                    <p class="articul" id="articul">Артикул: 1006</p>
+                    <div class="definition">
+                        <p class="definition">Cнимайте в революционном разрешении 8K и получайте сверхчеткие фотографии высокого качества прямо из видео. Добавьте к этому надежную защиту Samsung Knox, интеллектуальный аккумулятор, супермощный процессор и большой объем памяти для всех ваших файлов. Откройте новую главу в истории мобильных устройств.Увеличенный сенсор и cпециальный стабилизатор компенсируют дрожание камеры, чтобы ваши видеоролики получались не просто плавными, а суперплавными.Возьмите лучшее от каждого момента. Одно касание - и режим "Мультикадр" снимет видео, проанализирует при помощи искусственного интеллекта и предложит несколько фото и видео, включая ультраширокую панораму, фото с эффектом боке и многое другое.</p>
+                    </div>
+                    <div class="definition"style="border-bottom: 1px solid black;padding">
+                    <h3 class="otovare">О ТОВАРЕ</h3>
+                    <p class="definition">Процессор: Intel Core i7
+                        Частота процессора, ГГц: 2.2
+                        Объем оперативной памяти: 16 Гб
+                        Жесткий диск: HDD отсутствует
+                        Твердотельный накопитель: 256 Гб SSD
+                        Интегрированная в процессор графика: Intel UHD Graphics 630
+                        Модель дискретной видеокарты: Radeon Pro 555X
+                        Чипсет дискретной видеокарты: AMD
+                        Диагональ экрана, дюйм: 15.4
+                        Разрешение экрана: 2880 x 1800
+                        Операционная система: Mac OS Mojave</p>
+                    <br>
+                    </div>
+                    <div class="definition"style="border-bottom: 1px solid black;padding">
+                        <h3 class="otovare">ВОЗВРАТ ТОВАРА И ДЕНЕГ</h3>
+                        <p class="definition">Новый уровень безопасности
+                            Apple T2 - чип второго поколения для Mac, созданный для более надёжной защиты информации на вашем MacBook Pro. 15 дюймовая панель Touch Bar и оснащённая сопроцессором Secure Enclave, которая обеспечивает работу функции безопасной загрузки и отвечает за хранение зашифрованных данных. В Apple T2 интегрировано множество дискретных контроллеров, в том числе контроллер управления системой, аудиоконтроллер и SSD-контроллер. Кроме того, чип поддерживает функцию «Привет, Siri» на MacBook Pro - ваш голосовой помощник всегда готов открыть приложение, найти документ, включить музыку или ответить на вопрос.
+                            
+                            Самый мощный и универсальный порт
+                            Thunderbolt 3 объединил высочайшую пропускную способность с функциональностью стандартного интерфейса USB‑C. В итоге получился высокоскоростной и универсальный порт. Он позволяет передавать данные, заряжать устройства и выводить видео на дополнительные мониторы через один и тот же разъём. При этом его скорость в два раза выше, чем у Thunderbolt 2 - до 40 Гбит/с. MacBook Pro 15 дюймов имеет до четырёх таких портов, чтобы можно было подключаться с обеих сторон. А подсоединить ваши устройства можно всего одним кабелем или кабелем с адаптером. Поскольку порт Thunderbolt 3 симметричен, то при подключении не нужно думать, где у него верх, а где низ.</p>
+                        <br>
+                    </div>
+                    <div class="definition">
+                        <h3 class="otovare">ДОСТАВКА</h3>
+                        <p class="definition">Доставка с центральной торговой точки города (склад интернет-магазина), по адресу указанному при оформлении заказа. Доставка осуществляется в удобные для клиента время и день (с учетом рабочего времени филиала), в том числе и в день оформления заказа, при наличии свободных курьеров и товара на складе города, в пределах которого осуществляется доставка. Перевозка между торговыми точками городов носит плановый характер и не оплачивается.</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="cost">
+                        <span id="850" style="color: inherit;font-size: 22px;">₸1 199 900</span>
+                    </div>
+                    <div class="count">
+                        <h3 id="KOLVO">Количество</h3>
+                    </div>
+                    <div class="input" id="kolvo" >
+                        <img src="minusblack.png" id="minus" onclick="minus()" style="width: 15px; height: 6px;" alt="">
+                        <input type="number" value="1" class="tema" id="inputc">
+                        <img src="plusblack.png" id="plus" onclick="add()" style="width: 15px; height: 15px;" alt="">
+                    </div>
+                    <div class="button" id="">
+                        <a href="buy.html"><button class="Send" id="qwerty">Купить</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav class="pustoi1"></nav>
+    </div>
+    <div class="Eldar"></div>
+
+
+    <script src="finalproject.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styleweb.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+         @media(max-width: 620px){
+            section.heding1{
+                padding-top:20px;
+            }
+
+            section.heding1 a.name{
+                font-size: 40px;
+            }
+
+            img.korzina{
+                width: 25px;
+            }
+
+            a.glav{
+                font-size: 18px;
+            }
+            section.heding1{
+                height: 120px;
+            }
+            section.heding1 a.name{
+                font-size: 30px;
+            }
+            div.background{
+                padding: 0;
+                width: 30%;
+            }
+            div.companyname{
+                width: 40%;
+            }
+            section.pustoi{
+                width: 10%;
+            }
+            section.heding2-1{
+                width: 80%;
+                justify-content: space-around;
+            }
+            nav.pustoi1{
+                display: none;
+            }
+            div.information{
+                width: 100%;
+                padding: 20px;
+            }
+            div.main{
+                flex-direction: column;
+            }
+            div.left{
+                width: 100%;
+                padding-right: 0;
+            }
+            div.right{
+                width: 100%;
+            }
+
+         }
+
+
+    </style>
+
+
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <section class="heding1" id="heading">
+            <div class="background">
+                <img src="moonblack.png" id="moon" onclick="blackotovare()" class="moon" alt="">
+                <a href="Otovare3.html"><img src="sunblack.png" id="sun" class="sun" alt=""></a>
+            </div>
+            <div class="companyname">
+            <a class="name" id="companyname" href="Final Project.html" target="_self">WEB PORTAL</a>
+            </div>
+            <div class="background">
+                <label for="RUS"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png"  class="flag" alt=""></label>
+                <a href="Otovare3.html"><p id="RUS" class="language" onclick="Ru()">RU</p></a>
+                <label for="EN"><img src="https://icons.iconarchive.com/icons/wikipedia/flags/512/US-United-States-Flag-icon.png" class="flag" alt=""></label>
+                <p class="language" id="ENG" onclick="EN()">EN</p>
+            </div>
+        </section>
+        <section class="heding2" id="heding2">
+            <section class="pustoi" id="pustoi"></section>
+            <section class="heding2-1" id="heding2-1">
+            <a class="glav" href="Final Project.html" id="glav1" >Главная</a>
+            <a class="glav" href="store.html" id="glav2">Магазин</a>
+            <a class="glav" href="" id="glav3">Лицензий</a>
+            </section>
+            <section class="pustoi" id="pustoi">
+            <a href="" target="_self"><img class="korzina" id="korzina" src="korzinablack.png" alt="korzina"></a>
+            </section>
+        </section>
+    </header>
+    <div class="otstup"></div>
+    
+    <div class="information">
+        <nav class="pustoi1"></nav>
+        <div class="inform">
+            <div class="foto">
+                <img class="d-block w-100" src="https://static.talapai.kz//product-thumbs/500x500/76/d4/76d47343ecac7c232c2512aaea35e4db.jpg" alt="Первый слайд" style="width: 100%; height:100%; ">
+            </div>
+            <div class="main">
+                <div class="left">
+                    <h3 id="vashtovar" style="font-size: 22px;">ASUS Zenbook</h3>
+                    <p class="articul" id="articul">Артикул: 1003</p>
+                    <div class="definition">
+                        <p class="definition">Усовершенствовать уже идеальное устройство непросто, однако инженеры ASUS сумели сделать это с ультрабуком ZenBook S13. Сочетая классическую элегантность с современнейшими технологиями, он предлагает насладиться завораживающим изображением на дисплее NanoEdge с беспрецедентно тонкой рамкой и самой большой относительной площадью экрана Экран ультрабука ZenBook S13 выполнен в максимально компактном корпусе, поэтому его относительная площадь достигает рекордного значения. Добиться этого удалось благодаря беспрецедентно тонкой экранной рамке, толщина которой по бокам составляет всего 2.5 мм. За счет отсутствия четких границ картинка практически сливается с реальностью. При этом, в отличие от многих конкурирующих решений, встроенная веб-камера по-прежнему находится в наиболее удобном для проведения видеоконференций месте – над экраном.</p>
+                    </div>
+                    <div class="definition"style="border-bottom: 1px solid black;padding">
+                    <h3 class="otovare">О ТОВАРЕ</h3>
+                    <p class="definition">Процессор: Intel Core i5
+                        Модель процессора: 8265U
+                        Частота процессора, ГГц: 1.6
+                        Объем оперативной памяти: 16 Гб
+                        Твердотельный накопитель: 512 Гб SSD
+                        Диагональ экрана, дюйм: 13.9
+                        Разрешение экрана: 1920 x 1080 Full HD
+                        Операционная система: Microsoft Windows 10 Home (x64)
+                        Вес: 1.18 кг</p>
+                    <br>
+                    </div>
+                    <div class="definition"style="border-bottom: 1px solid black;padding">
+                        <h3 class="otovare">ВОЗВРАТ ТОВАРА И ДЕНЕГ</h3>
+                        <p class="definition">Возврат денег за товар надлежащего качества и некачественной продукции возможен, если следовать конкретным нормам права. Закон, который защищает права покупателей, дает возможность вернуть деньги, если у продукции имеются недостатки, не оговоренные продавцом в момент продажи. Закон о защите прав потребителей 2017 подчеркивает, что возврат денег за товар возможен в строго определенные сроки, причем разные для вещей надлежащего качества и некачественного продукта.</p>
+                        <br>
+                    </div>
+                    <div class="definition">
+                        <h3 class="otovare">ДОСТАВКА</h3>
+                        <p class="definition">Доставка с центральной торговой точки города (склад интернет-магазина), по адресу указанному при оформлении заказа. Доставка осуществляется в удобные для клиента время и день (с учетом рабочего времени филиала), в том числе и в день оформления заказа, при наличии свободных курьеров и товара на складе города, в пределах которого осуществляется доставка. Перевозка между торговыми точками городов носит плановый характер и не оплачивается.</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="cost">
+                        <span id="850" style="color: inherit;font-size: 22px;">₸629 900</span>
+                    </div>
+                    <div class="count">
+                        <h3 id="KOLVO">Количество</h3>
+                    </div>
+                    <div class="input" id="kolvo" >
+                        <img src="minusblack.png" id="minus" onclick="minus()" style="width: 15px; height: 6px;" alt="">
+                        <input type="number" value="1" class="tema" id="inputc">
+                        <img src="plusblack.png" id="plus" onclick="add()" style="width: 15px; height: 15px;" alt="">
+                    </div>
+                    <div class="button" id="">
+                        <a href="buy.html"><button class="Send" id="qwerty">Купить</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav class="pustoi1"></nav>
+    </div>
+    <div class="Eldar"></div>
+
+
+    <script src="finalproject.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

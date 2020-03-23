@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styleweb.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        @media(max-width: 1330px){
+            div.menu{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            div.image1,div.image2{
+                width: 100%;
+                height: 600px;
+            }
+            
+        }
+        @media(max-width: 1240px){
+           
+            input.name{
+                width: 100%;
+                margin: 0 0 10px 0;
+            }
+            div.Question{
+                flex-direction:column ;
+            }
+            div.Contacts{
+                width: 100%;
+            }
+            form.aksukent{
+                width: 100%;
+                padding: 80px 20%;
+                border-top: 1px solid black;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+        @media(max-width: 600px){
+            section.tovar{
+                flex-direction: column;
+                justify-items: center;
+                padding-left: 0px;
+            }
+            div.Time{
+                padding: 40px;
+            }
+            p.Time{
+                font-size: 30px;
+            }
+            p.Time1{
+                font-size: 20px;
+            }
+            div.chip{
+                width: 100%;
+                height:300px;
+                
+            }
+
+            pre.slogan{
+                font-size: 30px;
+            }
+
+            
+
+            img.korzina{
+                width: 25px;
+            }
+
+            a.glav{
+                font-size: 18px;
+            }
+
+            img.tovar{
+                width: 10px;
+                height: 20px;
+            }
+
+            div.tovarname{
+                width: 340px;
+            }
+
+            div.cost{
+                width: 340px;
+            }
+
+            div.menu{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+            }
+
+            div.image1,div.image2{
+                width: 100%;
+                height: 200px;
+            }
+
+            div.catalog{
+                display: none;
+                height: 100px;
+                line-height: 0.00001px;
+            }
+            div.info{
+               
+                padding-top: 40px;
+            }
+            h2.Catalog{
+                font-size: 20px;
+            }
+            h3.Catalog{
+                font-size: 30px;
+            }
+            h2.info{
+                font-size: 25px;
+            }
+            p.info{
+                font-size: 14px;
+                
+            }
+            p.info1{
+                font-size: 14px;
+                font-weight: 100;
+            }
+            section.heding1{
+                height: 120px;
+            }
+            section.heding1 a.name{
+                font-size: 30px;
+            }
+            div.background{
+                padding: 0;
+                width: 30%;
+            }
+            div.companyname{
+                width: 40%;
+            }
+            section.pustoi{
+                width: 10%;
+            }
+            section.heding2-1{
+                width: 80%;
+                justify-content: space-around;
+            }
+            div.Question{
+                flex-direction:column ;
+            }
+            div.Contacts{
+                width: 100%;
+            }
+            form.aksukent{
+                width: 100%;
+                padding: 40px 50px;
+                justify-content: center;
+                align-items: center;
+            }
+            section.tovar{
+                display: block;
+            }
+            input.name{
+                width: 100%;
+                margin: 0 0 10px 0;
+            }
+            
+
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <section class="heding1" id="heading">
+            <div class="background">
+                <img src="moonblack.png" id="moon" onclick="black()" class="moon" alt="">
+                <a href="Final Project.html"><img src="sunblack.png" id="sun" class="sun" alt=""></a>
+            </div>
+            <div class="companyname">
+            <a class="name" id="companyname" href="Final Project.html" target="_self">WEB PORTAL</a>
+            </div>
+            <div class="background">
+                <label for="RUS"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png"  class="flag" alt=""></label>
+                <p id="RUS" class="language" onclick="Ru()">RU</p>
+                <label for="EN"><img src="https://icons.iconarchive.com/icons/wikipedia/flags/512/US-United-States-Flag-icon.png" class="flag" alt=""></label>
+                <p class="language" id="ENG" onclick="EN()">EN</p>
+            </div>
+        </section>
+        <section class="heding2" id="heding2">
+            <section class="pustoi" id="pustoi"></section>
+            <section class="heding2-1" id="heding2-1">
+            <a class="glav" href="Final Project.html" id="glav1">Главная</a>
+            <a class="glav" href="store.html" id="glav2">Магазин</a>
+            <a class="glav" href="" id="glav3">Лицензий</a>
+            </section>
+            <section class="pustoi" id="pustoi">
+            <a href="" target="_self"><img class="korzina" id="korzina" src="korzinablack.png" alt="korzina"></a>
+            </section>
+        </section>
+    </header>
+    
+    <div class="chip">
+        <pre class="slogan" id="slogan">За покупками - в 
+«WEB PORTAL»
+        </pre>
+    </div>
+    <div>
+        <div class="abdu">
+            <section class="tovar">
+          
+              <div class="tovarn1">
+                <a href="Otovare1.html" target="_self"><img class="d-block w-100" src="https://www.kns.ru/linkpics/asus-tuf-gaming-fx505dt-90nr02d1-m02760-0.jpg" alt="Первый слайд" style="width: 100%; height:100%; "></a>
+                <div class="tovarname1">
+                    <h3 class="nametovar" >ASUS TUF Gaming FX505DT</h3>
+                    <div class="cost1">
+                        
+                        <span class="discount" style="color: inherit;">₸346 900</span>
+                    </div>
+                </div>
+              </div>
+          
+              <div class="tovarn1">
+                <a href="Otovare2 .html" target="_self"><img class="d-block w-100" src="https://avatars.mds.yandex.net/get-mpic/466729/img_id2318944586680390311.jpeg/9hq" alt="Первый слайд" style="width: 100%; height:100%; "></a>
+                <div class="tovarname1">
+                    <h3 class="nametovar" >DELL XPS 13</h3>
+                    <div class="cost1">
+                        
+                        <span class="discount" style="color: inherit;">₸899 900</span>
+                    </div>
+                </div>
+              </div>
+          
+              <div class="tovarn1">
+                <a href="Otovare3.html" target="_self"><img class="d-block w-100" src="https://object.pscloud.io/cms/cms/Photo/img_0_62_1389_4.jpg" alt="Первый слайд" style="width: 100%; height:100%; "></a>
+                <div class="tovarname1">
+                    <h3 class="nametovar" >ASUS Zenbook</h3>
+                    <div class="cost1">
+                        <span class="discount" style="color: inherit;">₸629 900</span>
+                    </div>
+                </div>
+              </div>
+          
+              <div class="tovarn1">
+                <a href="Otovare4.html" target="_self"><img class="d-block w-100" src="https://forcecom.kz/upload/iblock/431/431f12f9a36fb2eb632304c772a73455.png" alt="Первый слайд" style="width: 100%; height:100%; "></a>
+                <div class="tovarname1">
+                    <h3 class="nametovar" >ASUS VivoBook</h3>
+                    <div class="cost1">
+                        <span class="discount" style="color: inherit;">₸359 900</span>
+                    </div>
+                </div>
+            </div>
+          
+              <div class="tovarn1">
+                <a href="Otovare5.html" target="_self"><img class="d-block w-100" src="https://fora.kz/images/content/products/606124/apple-macbook-air-13-silver_5a264534455db.jpg" alt="Первый слайд" style="width: 100%; height:100%; "></a>
+                <div class="tovarname1">
+                    <h3 class="nametovar" >MacBook Air</h3>
+                    <div class="cost1">
+                        <span class="discount" style="color: inherit;">₸699 900</span>
+                    </div>
+                </div>
+            </div>
+          
+              <div class="tovarn1">
+                <a href="Otovare6.html" target="_self"><img class="d-block w-100" src="https://gadgetstore.kz/wa-data/public/shop/products/25/02/225/images/1175/1175.970.jpg" alt="Первый слайд" style="width: 100%; height:100%; "></a>
+                <div class="tovarname1">
+                    <h3 class="nametovar" >MacBook Pro</h3>
+                    <div class="cost1">
+                        <span class="discount" style="color: inherit;">₸1 199 900</span>
+                    </div>
+                </div>
+            </div>
+          
+              <div class="tovarn1">
+                  <a href="Otovare7.html" target="_self"><img class="d-block w-100" src="https://static.shop.kz/upload/iblock/540/142567_1.jpg" alt="Первый слайд" style="width: 100%; height:100%; "></a>
+                  <div class="tovarname1">
+                      <h3 class="nametovar" >HP Gaming</h3>
+                      <div class="cost1">
+                          <span class="discount" style="color: inherit;">₸586 900</span>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="tovarn1">
+                <a href="Otovare8.html" target="_self"><img class="d-block w-100" src="https://avatars.mds.yandex.net/get-mpic/364668/img_id2683655159833502411.jpeg/9hq" alt="Первый слайд" style="width: 100%; height:100%; "></a>
+                <div class="tovarname1">
+                    <h3 class="nametovar" >HP Omen 17</h3>
+                    <div class="cost1">
+                        <span class="discount" style="color: inherit;">₸1 296 900</span>
+                    </div>
+                </div>
+            </div>
+          
+           
+          
+          </section>
+          </div>
+
+        <div class="catalog" id="bgcatalog">
+            <h3 class="Catalog" id="catalog">Каталог</h3>
+            <h2 class="Catalog" id="time">Время Покупать</h2>
+        </div>
+
+        <div id="carouselExampleControls"  class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" >
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="image1.jpg" alt="Первый слайд" style="width: 100%; height:100%; ">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="image2.jpg" alt="Второй слайд" style="width: 100%; height:100%; ">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+       <div class="info" id="info">
+            <h2 class="info" id="h2info">«WEB-PORTAL»: наша история></h2>
+            <p class="info" id="pinfo">Лучший источник высокотехнологичных товаров</p>
+            <br>
+            <p class="info1" id="preinfo">«WEB PORTAL» является ведущим магазином электронной техники в с. Аксукент с 2008 года. Мы
+предлагаем Компьютеры, Мобильные телефоны, Ноутбуки и сопутствующие товары, а также
+формируем комплекты и подбираем аксессуары в соответствии с характеристиками, указанными
+клиентом. «WEB PORTAL» — это приятный шопинг. Мы поможем выбрать нужный товар, быстро и
+бесплатно доставим его и обеспечим профессиональную поддержку.</p>
+
+ <p class="info"> <span style="font-weight: 800;"> Если вам нужно отремонтировать технику или приобрести новую, «WEB PORTAL» справится с любым вашим запросом.</span></p>
+       </div>
+
+       <div class="image3">
+        
+       </div>
+
+       <div class="Time" id="Time">
+        <p class="Time" id="pTime">Часы работы</p>
+        <p class="Time1" id="pTime1">Заходите к нам!</p>
+        <pre class="Date" id="Date">ПН–ПТ: 9:00–18:00
+СБ: 10:00–14:00
+ВС: выходной</pre>
+       </div>
+
+       <div class="Questions" id="Questions"> 
+            <div class="Contacts" id="montacts">
+                <p class="Time" id="qwe">Контакты</p>
+                <p class="Date" id="meken">ул. Жандарбекова, 1, Аксукент, 160800, Казахстан</p>
+                <p  class="Date" id="email">baur_must@mail.ru</p>
+                <p  class="Date" id="telefon">+7-725-312-05-66</p>                          
+
+
+             </div>
+        <form action="comment.html" class="aksukent" method="POST" onsubmit="return check()">
+            
+            <input class="name" type="text" id="inname"  style="padding-left: 20px;" value required placeholder="Имя" maxlength="100">
+            <input class="name" type="text" id="insurname" style="padding-left: 20px;" value required placeholder="Фамилия" maxlength="100">
+            <input class="name" type="number" id="innumber" style="padding-left: 20px;" value required placeholder="Номер" maxlength="100">
+            <input class="name" type="text" id="inadress" style="padding-left: 20px;" value required placeholder="Адрес" maxlength="100">
+            <input class="tema" type="text" id="intheme" style="padding-left: 20px;" value required placeholder="Тема" maxlength="100">
+            <textarea class="name" type="text" id="incomment" style="padding-left: 20px;" value required placeholder="Добавьте сообщение..." maxlength="250"></textarea>
+            <button type="submit" class="Send" id="QWE">Отправить</button>
+            
+        </form>
+       </div>
+
+
+        <div class="footer">
+            <a href="https://www.instagram.com/webportal_aksukent/?hl=ru" target="_blank"> <img class="instagram" src="https://lh3.googleusercontent.com/proxy/1Vkng8wX4bgbWQGYou-0yfhVukyRXUM_GtRkTRJb-yZTWhvbZ2JA-H37PXCVdJgyJBloc7moq7NxA4I2j2L3TjYr2crj5CRlZkXxn--SgvInzD1qEK4vU-6qyRuoydRPoReaHE2VC4ExneAbee20mmgQKg" alt="Instagram" title="Instagram"></a>
+            <a href="https://my.mail.ru/mail/sayrambay12/" target="_blank"> <img class="instagram" src="https://lh3.googleusercontent.com/proxy/ObIfPJ2Aalmpm814uU_69aaLeC76JHvCFYkrgmSZ2hNjsCjZ7_VgPKhJF_VJuo0VOynKlXaOTf7nz3bnFUghv_VLmzkPtwdaYFMI" alt="Mail.ru" title="Mail.ru"></a>
+            <a href="https://www.facebook.com/" target="_blank"> <img class="instagram" src="https://i.pinimg.com/originals/16/b8/22/16b82240a640db6fb6c18297fc1dcfd3.png" alt="facebook" title="facebook"></a>
+        </div>
+
+<script src="finalproject.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script  src="slick/slick.min.js"></script>
+      
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+      <script >
+        $(document).ready(function(){
+          $('.tovar').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        
+      ]
+    });
+        });
+      </script>
+</body>
+</html>

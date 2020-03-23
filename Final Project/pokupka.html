@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styleweb.css">
+
+    <style>
+        @media(max-width: 600px){
+            section.heding1{
+                padding-top:20px;
+            }
+
+            section.heding1 a.name{
+                font-size: 40px;
+            }
+
+            img.korzina{
+                width: 25px;
+            }
+
+            a.glav{
+                font-size: 18px;
+            }
+            section.heding1{
+                padding-top:20px;
+            }
+
+            section.heding1 a.name{
+                font-size: 40px;
+            }
+            section.heding1{
+                height: 120px;
+            }
+            section.heding1 a.name{
+                font-size: 30px;
+            }
+
+            div.background{
+                padding: 0;
+                width: 30%;
+            }
+            div.companyname{
+                width: 40%;
+            }
+            section.heding2-1{
+                width: 80%;
+                justify-content: space-around;
+            }
+        }
+        @media(max-width: 1430px){
+            nav.white2{
+                display: none;
+            }
+            form.card{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header id="header">
+        <section class="heding1" id="heading">
+            <div class="background">
+                <img src="moonblack.png" id="moon" onclick="black()" class="moon" alt="">
+                <a href="pokupka.html"><img src="sunblack.png" id="sun" class="sun" alt=""></a>
+            </div>
+            <div class="companyname">
+            <a class="name" id="companyname" href="Final Project.html" target="_self">WEB PORTAL</a>
+            </div>
+            <div class="background">
+                <label for="RUS"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png"  class="flag" alt=""></label>
+                <a href="pokupka.html"><p id="RUS" class="language" onclick="Ru()">RU</p></a>
+                <label for="EN"><img src="https://icons.iconarchive.com/icons/wikipedia/flags/512/US-United-States-Flag-icon.png" class="flag" alt=""></label>
+                <p class="language" id="ENG" onclick="EN()">EN</p>
+            </div>
+        </section>
+        <section class="heding2" id="heding2">
+            <section class="pustoi" id="pustoi"></section>
+            <section class="heding2-1" id="heding2-1">
+            <a class="glav" href="Final Project.html" id="glav1">Главная</a>
+            <a class="glav" href="store.html" id="glav2">Магазин</a>
+            <a class="glav" href="" id="glav3">Лицензий</a>
+            </section>
+            <section class="pustoi" id="pustoi">
+            <a href="" target="_self"><img class="korzina" id="korzina" src="korzinablack.png" alt="korzina"></a>
+            </section>
+        </section>
+    </header>
+
+    <div class="bari">
+        <nav class="white2"></nav>
+        <form action="vk.com" class="card" style="justify-content: center;align-items: center;" method="POST" onsubmit="return check1()">
+            <h3>Спасибо За покупку скоро с вами свяжуться наши менеджеры</h3>
+            
+        </form>
+        <nav class="white2"></nav>
+    </div>
+
+
+    <script src="finalproject.js"></script>
+</body>
+</html>
